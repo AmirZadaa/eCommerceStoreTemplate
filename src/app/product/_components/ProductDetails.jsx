@@ -23,7 +23,7 @@ export default function ProductDetails() {
        </div>
        </div>
        <div className="flex gap-2">
-        <span className='font-bold'>Colors:</span>
+        <span  className='font-bold '>Colors:</span>
         {/* {["#00ffff", "#0000ee", "#11aa11"].map((item, index) => (
           <div
             key={index}
