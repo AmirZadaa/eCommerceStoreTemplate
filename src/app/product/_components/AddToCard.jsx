@@ -15,7 +15,7 @@ export default function AddToCard() {
          </div>
          <div className='flex w-full justify-center mx-auto  gap-2 mt-4 max-sm:flex-col hover:bg-background'>
            <CardSheet>
-             <Button aria-label="add to card" className='hover:bg-background hover:text-foreground p-6 border-2 duration-300 border-primary font-bold text-md rounded-none w-full'><ShoppingCart size={25}/>Add to cart</Button>
+             <Button aria-label="add to card" className='hover:bg-background hover:text-foreground p-6 border-2 duration-300 border-primary font-bold text-md rounded-none w-full ' variant="ghost"><ShoppingCart size={25}/>Add to cart</Button>
            </CardSheet>
            <CustomButton title="Buy Now"/>
          </div>
