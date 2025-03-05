@@ -27,7 +27,7 @@ export default function ProductDetails() {
         {["#0fff","#00e","#1aa"].map((item, index) => (
           <div
             key={index}
-            style={{ backgroundColor: item }}
+            style={{ backgroundColor: `${item}` }}
             className={`py-[10px] px-[10px] inline-block rounded-full  `}
           ></div>
         ))}
