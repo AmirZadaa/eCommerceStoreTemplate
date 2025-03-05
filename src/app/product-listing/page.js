@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div>
-      <Link href="product" aria-label="got product detail page"><Products/></Link>
+      <Link href="/product" aria-label="got product detail page"><Products/></Link>
     </div>
   );
 }
