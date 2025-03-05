@@ -11,8 +11,8 @@ export default function Page() {
       </div>
       <div className='grid grid-cols-3 gap-8 px-20 max-[1200px]:grid-cols-2  max-md:grid-cols-1 max-sm:px-4 max-wide:px-6 mt-4'>
        <ProductImages/>
-       {/* <ProductDetails/>
-       <AddToCard/> */}
+       <ProductDetails/>
+       {/* <AddToCard/> */}
       </div>
     </div>
   )
