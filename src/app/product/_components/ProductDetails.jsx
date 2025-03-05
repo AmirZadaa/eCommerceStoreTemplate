@@ -24,10 +24,10 @@ export default function ProductDetails() {
        </div>
        <div className="flex gap-2">
         <span className='font-bold'>Colors:</span>
-        {["#0fff","#00e","#1aa"].map((item, index) => (
+        {["#00ffff", "#0000ee", "#11aa11"].map((item, index) => (
           <div
             key={index}
-            style={{ backgroundColor: `${item}` }}
+            style={{ backgroundColor: item}}
             className={`py-[10px] px-[10px] inline-block rounded-full   `}
           ></div>
         ))}
