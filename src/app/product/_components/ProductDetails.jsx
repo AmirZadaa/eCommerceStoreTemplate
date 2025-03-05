@@ -28,7 +28,7 @@ export default function ProductDetails() {
           <div
             key={index}
             style={{ backgroundColor: `${item}` }}
-            className={`py-[10px] px-[10px] inline-block rounded-full  `}
+            className={`py-[10px] px-[10px] inline-block rounded-full   `}
           ></div>
         ))}
       </div>
