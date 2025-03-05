@@ -1,16 +1,18 @@
 import localFont from "next/font/local";
+import {Montserrat} from "next/font/google";
 import "./globals.css";
+import Nav from "./_sections/Nav";
+import Footer from "./_sections/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  fallback: ["Helvetica", "Arial", "sans-serif"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+
 
 export const metadata = {
   title: "Create Next App",
@@ -21,10 +23,50 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} font-montserrat antialiased`}
       >
+        <Nav/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
 }
+
+
+// import localFont from "next/font/local";
+// import "./globals.css";
+// import Nav from "@/components/Nav";
+
+// const national_bold = localFont({
+//   src: "./fonts/National2CondensedBold.woff2",
+//   subsets: ["normal"],
+//   display: "swap",
+//   variable: "--font-national-bold",
+//   fallback: ['Roboto', 'Impact', 'sans-serif']
+// });
+
+// const national = localFont({
+//   src: "./fonts/National2Condensed.woff2",
+//   subsets: ["normal"],
+//   display: "swap",
+//   variable: "--font-national",
+//   fallback: ['Arial', 'Helvetica', 'sans-serif']
+// });
+
+
+// export const metadata = {
+//   title: "KFC (Working) | Deals & Offers",
+//   description: "This is KFC Clone. We are working on this project. in this project we are using next js 13.4, The team members are Ali, Hafeez and Amir. We will done this project Soon.",
+// };
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <body className={`${national.style} ${national_bold.variable} `}>
+//         <Nav />
+//         {children}
+//       </body>
+//     </html>
+//   );
+// }

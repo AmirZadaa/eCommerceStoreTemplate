@@ -24,7 +24,7 @@ export default function CardImage({img_url,title,badge,rating}) {
       </div>
       <CardIcons />
       <div className="bg-background px-2  text-primary absolute bottom-1 left-1 rounded-sm flex justify-center items-center">
-        <Star size={15} className="fill-orange-400" />
+        <Star size={15} className="fill-primary" />
         <span className="text-black ms-2">{rating}</span>
       </div>
     </div>

@@ -10,16 +10,16 @@ export default function ProductDetails() {
          <span className='font-bold'>MRP: </span>
          <span className='text-primary font-bold'>$566</span>
          </div>
-         <span className="line-through text-gray-500 font-light">$455</span>
-         <span className='px-2 py-1  bg-primary'>9% Off</span>
+         <span className="line-through text-secondary-foreground font-light">$455</span>
+         <span className='px-2 py-1  bg-primary-100 text-primary-700'>9% Off</span>
        </div>
        <div className=''>
         <div className='flex gap-1 items-center'>    
             {Array.from({length:4}).map((_,index)=> (
-            <Star key={index} size={20} className='text-primary fill-yellow-500 '/>
+            <Star key={index} size={20} className='text-primary fill-primary '/>
             ))}
-            <span className='text-gray-500'>|</span>
-            <span className='underline font-light ms-2'>Review</span>
+            <span className='text-secondary-foreground'>|</span>
+            <span className='underline font-light ms-2'>1 Review</span>
        </div>
        </div>
        <div className="flex gap-2">
@@ -28,7 +28,7 @@ export default function ProductDetails() {
           <div
             key={index}
             style={{ backgroundColor: item }}
-            className={`py-3 px-3 inline-block rounded-full  `}
+            className={`py-[10px] px-[10px] inline-block rounded-full  `}
           ></div>
         ))}
       </div>
